@@ -10,6 +10,7 @@
 
 <script type="text/ng-template" id="items_renderer">
     <ion-item class="item depth-{{item.depth}}"
+              ng-class="item.rowClass"
               ng-click="toggleCollapse(item); emitEvent(item)"
               ng-include="templateUrl">
     </ion-item>
